@@ -1,10 +1,13 @@
- export function App() {
+import "@/app/globals.css"
+import Navbar from "./PageComponents/navbar";
+import { Separator } from "./components/ui/separator";
+
+export default function App() {
 
   return (
-    <>
-      <h1> Helo world </h1>
-    </>
-  )
-}
-
-export default App
+    <div className="body">
+      <Navbar />
+      <Separator className="separator" />
+    </div>
+  );
+} 
